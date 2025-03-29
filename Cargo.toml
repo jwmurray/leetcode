@@ -1,0 +1,8 @@
+[workspace]
+members = [
+    "two_sum",
+    "roman_to_int",
+    "palindrome",
+    "longest_common_prefix",
+    "add_numbers_linked_lists",
+]
