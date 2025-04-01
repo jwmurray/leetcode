@@ -1,8 +1,10 @@
 [workspace]
+resolver = "3"
 members = [
     "two_sum",
     "roman_to_int",
     "palindrome",
     "longest_common_prefix",
     "add_numbers_linked_lists",
+    "merge_to_lists",
 ]
