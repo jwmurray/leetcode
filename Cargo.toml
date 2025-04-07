@@ -6,5 +6,5 @@ members = [
     "palindrome",
     "longest_common_prefix",
     "add_numbers_linked_lists",
-    "merge_to_lists",
+    "merge_to_lists", "minimum_pair_sort_array",
 ]
