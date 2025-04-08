@@ -155,6 +155,10 @@ dependencies = [
 ]
 
 [[package]]
+name = "remove_duplicates_from_sorted_array"
+version = "0.1.0"
+
+[[package]]
 name = "roman_to_int"
 version = "0.1.0"
 dependencies = [
