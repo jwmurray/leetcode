@@ -1,0 +1,6 @@
+[package]
+name = "leet_28_find_index_of_first_occurence"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]

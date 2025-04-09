@@ -123,6 +123,14 @@ name = "leet_27_remove_element"
 version = "0.1.0"
 
 [[package]]
+name = "leet_28_find_index_of_first_occurence"
+version = "0.1.0"
+
+[[package]]
+name = "leet_35_search_insert_position"
+version = "0.1.0"
+
+[[package]]
 name = "longest_common_prefix"
 version = "0.1.0"
 
