@@ -135,6 +135,18 @@ name = "leet_58_length_of_last_word"
 version = "0.1.0"
 
 [[package]]
+name = "leet_66_plus_one"
+version = "0.1.0"
+
+[[package]]
+name = "leet_67_add_binary"
+version = "0.1.0"
+
+[[package]]
+name = "leet_67_add_binary2"
+version = "0.1.0"
+
+[[package]]
 name = "longest_common_prefix"
 version = "0.1.0"
 
