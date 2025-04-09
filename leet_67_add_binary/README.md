@@ -2,6 +2,9 @@
 Attempted
 Easy
 
+```
+ pub fn add_binary(a: String, b: String) -> String {}
+```
 Given two binary strings a and b, return their sum as a binary string.
  
 
