@@ -131,6 +131,10 @@ name = "leet_35_search_insert_position"
 version = "0.1.0"
 
 [[package]]
+name = "leet_58_length_of_last_word"
+version = "0.1.0"
+
+[[package]]
 name = "longest_common_prefix"
 version = "0.1.0"
 
