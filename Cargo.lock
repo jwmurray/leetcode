@@ -129,6 +129,10 @@ name = "leet_125_valid_palindrome"
 version = "0.1.0"
 
 [[package]]
+name = "leet_136_single_number"
+version = "0.1.0"
+
+[[package]]
 name = "leet_20_valid_parentheses"
 version = "0.1.0"
 
