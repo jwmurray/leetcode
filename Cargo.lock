@@ -125,6 +125,10 @@ name = "leet_118_pascals_triangle"
 version = "0.1.0"
 
 [[package]]
+name = "leet_125_valid_palindrome"
+version = "0.1.0"
+
+[[package]]
 name = "leet_20_valid_parentheses"
 version = "0.1.0"
 
