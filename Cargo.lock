@@ -142,6 +142,10 @@ name = "leet_136_single_number"
 version = "0.1.0"
 
 [[package]]
+name = "leet_191_number_of_1_bits"
+version = "0.1.0"
+
+[[package]]
 name = "leet_193_valid_phone_numbers"
 version = "0.1.0"
 dependencies = [
