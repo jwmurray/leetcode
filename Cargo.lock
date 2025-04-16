@@ -150,6 +150,10 @@ name = "leet_187_repeated_dna_sequences"
 version = "0.1.0"
 
 [[package]]
+name = "leet_190_reverse_bits"
+version = "0.1.0"
+
+[[package]]
 name = "leet_191_number_of_1_bits"
 version = "0.1.0"
 
