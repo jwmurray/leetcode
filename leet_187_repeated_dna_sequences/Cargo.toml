@@ -1,0 +1,6 @@
+[package]
+name = "leet_187_repeated_dna_sequences"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
