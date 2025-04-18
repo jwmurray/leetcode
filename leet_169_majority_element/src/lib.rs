@@ -1,9 +1,9 @@
 pub struct Solution;
 
-use std::{collections::HashMap, default};
+use std::{collections::HashMap};
 
 impl Solution {
-    pub fn majority_element(nums: Vec<i32>) -> i32 {
+    pub fn majority_element_with_hash(nums: Vec<i32>) -> i32 {
         let limit = nums.len()/2;
         let mut hash: HashMap<i32, i32> = HashMap::with_capacity(nums.len());
         let mut max = nums[0];
@@ -24,6 +24,23 @@ impl Solution {
         }
         max
     }
+    
+    pub fn majority_element(nums: Vec<i32>) -> i32 {
+        let limit = nums.len() / 2;
+        let mut counts = HashMap::with_capacity(nums.len());
+        let first_num = nums[0];  // Store first element before loop
+        
+        for num in nums {
+            let count = counts.entry(num).or_insert(0);
+            *count += 1;
+            
+            if *count > limit {
+                return num;
+            }
+        }
+        
+        first_num  // Return stored first element
+    }
 }
 
 
@@ -40,6 +57,12 @@ mod tests {
         let nums = vec![2,2,1,1,1,2,2];
         let expected = 2;
         assert_eq!(Solution::majority_element(nums), expected);
+    }
+    #[test]
+    fn test_2() {
         
+        let nums = vec![6,5,5];
+        let expected = 5;
+        assert_eq!(Solution::majority_element(nums), expected);
     }
 }
