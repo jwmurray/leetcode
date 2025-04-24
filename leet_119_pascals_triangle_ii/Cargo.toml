@@ -1,0 +1,6 @@
+[package]
+name = "leet_119_pascals_triangle_ii"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
