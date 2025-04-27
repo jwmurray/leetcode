@@ -1,6 +1,25 @@
 pub struct Solution;
 
 // Definition for singly-linked list.
+struct ListHead(Option<Box<ListNode>>);
+
+impl ListHead {
+    fn len(&self) -> usize {
+        let mut cur: &Option<Box<ListNode>> = &self.0;
+        let mut count = 0;
+        while let Some(node) = cur {
+            count += 1;
+            cur = &node.next;
+        }
+        count
+    }
+    fn prepend(&mut self, val: i32) {
+        let mut boxed_node = Box::new(ListNode::new(val));
+        boxed_node.next = std::mem::take(&mut self.0); // This will set self.0 to None and move the current self.0 to next!
+        self.0 = Some(boxed_node);
+    }
+}
+
 #[derive(PartialEq, Eq, Clone, Debug)]
 pub struct ListNode {
     pub val: i32,
@@ -56,5 +75,10 @@ mod tests {
         head = prepend_node(5, head);
         assert_eq!(list_len(&head), 1);
         head = Solution::reverse_list(head);
+
+        let mut list_head: ListHead = ListHead(None);
+        assert_eq!(list_head.len(), 0);
+        list_head.prepend(5);
+        assert_eq!(list_head.len(), 1);
     }
 }
