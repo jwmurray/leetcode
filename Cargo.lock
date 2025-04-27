@@ -189,6 +189,10 @@ name = "leet_205_isomorphic_strings"
 version = "0.1.0"
 
 [[package]]
+name = "leet_206_reverse_linked_list"
+version = "0.1.0"
+
+[[package]]
 name = "leet_20_valid_parentheses"
 version = "0.1.0"
 
