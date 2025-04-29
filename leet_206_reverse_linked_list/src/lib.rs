@@ -36,13 +36,26 @@ impl ListHead {
         return_vector
     }
 
+    fn to_vector_with_collect(&self) -> Vec<i32> {
+        let mut current = &self.0;
+        std::iter::from_fn(move || {
+            if let Some(node) = current {
+                current = &node.next;
+                Some(node.val)
+            } else {
+                None
+            }
+        })
+        .collect()
+    }
+
     fn prepend_node(&mut self, mut node: ListNode) {
-        node.next = std::mem::take(&mut self.0); // save off the first node in the list which is ListHead.0 as the next of the incoming node -- but we have to take ownership of it
+        node.next = self.0.take(); // save off the first node in the list which is ListHead.0 as the next of the incoming node -- but we have to take ownership of it
         self.0 = Some(Box::new(node)); // set the ListHead.0 to the Some(of the  incoming node)
     }
 
     fn reverse(&mut self) {
-        let mut some_current_node = std::mem::take(&mut self.0);
+        let mut some_current_node = self.0.take(); // will be None if self.0 is None.
         while let Some(mut node) = some_current_node {
             some_current_node = std::mem::take(&mut node.next);
             self.prepend_node(*node);
