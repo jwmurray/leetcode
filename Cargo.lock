@@ -134,6 +134,10 @@ name = "leed_231_power_of_two"
 version = "0.1.0"
 
 [[package]]
+name = "leet_1114_print_in_order"
+version = "0.1.0"
+
+[[package]]
 name = "leet_118_pascals_triangle"
 version = "0.1.0"
 
